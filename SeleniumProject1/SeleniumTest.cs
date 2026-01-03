@@ -36,7 +36,7 @@ namespace SeleniumProject1
         {
             ReadOnlyCollection<IWebElement> menuItem = driver.FindElements(By.XPath("//ul[contains(@class,'horizontal-list product-menu')]/li"));
 
-            Assert.That(menuItem, Is.EqualTo(4)); 
+            Assert.That(menuItem.Count, Is.EqualTo(4));
         }
 
         [Test]
